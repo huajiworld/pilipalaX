@@ -25,7 +25,7 @@ Future<void> landScape() async {
       //     DeviceOrientation.landscapeRight,
       //   ],
       // );
-      await AutoOrientation.landscapeAutoMode(forceSensor: true);
+      await AutoOrientation.landscapeAutoMode(forceSensor: false);
     } else if (Platform.isMacOS || Platform.isWindows || Platform.isLinux) {
       await const MethodChannel('com.alexmercerind/media_kit_video')
           .invokeMethod(
